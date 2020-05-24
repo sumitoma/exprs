@@ -1,0 +1,13 @@
+
+@host = http://localhost:3000
+
+GET {{host}} HTTP/1.1
+Accept: application/json
+
+###
+
+# @name apiname
+POST {{host}} HTTP/1.1
+Accept: application/json
+Connection: keep-alive
+Keep-Alive: timeout=10, max=5
